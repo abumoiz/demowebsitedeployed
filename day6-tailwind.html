@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Modern Navbar</title>
+</head>
+<body class="bg-slate-900">
+
+<!-- Navbar -->
+<nav class="fixed top-0 left-0 w-full backdrop-blur-lg bg-white/10 border-b border-white/20 z-50">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="flex items-center justify-between h-20">
+
+            <!-- Logo -->
+            <a href="#" class="text-3xl font-extrabold bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
+                MoizDev
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+
+                <a href="#" class="text-white hover:text-cyan-400 transition duration-300 font-medium">
+                    Home
+                </a>
+
+                <a href="./day6-tailwind-aboutmepage.html" class="text-white hover:text-cyan-400 transition duration-300 font-medium">
+                    About
+                </a>
+
+                <a href="#" class="text-white hover:text-cyan-400 transition duration-300 font-medium">
+                    Services
+                </a>
+
+                <a href="#" class="text-white hover:text-cyan-400 transition duration-300 font-medium">
+                    Portfolio
+                </a>
+
+                <a href="#" class="text-white hover:text-cyan-400 transition duration-300 font-medium">
+                    Contact
+                </a>
+
+                <!-- Button -->
+                <a href="#"
+                   class="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold hover:scale-105 transition duration-300 shadow-lg hover:shadow-cyan-500/50">
+                    Get Started
+                </a>
+
+            </div>
+
+            <!-- Mobile Button -->
+            <button id="menu-btn" class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="w-8 h-8"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+
+                    <path stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden pb-5">
+
+            <a href="#" class="block py-3 text-white hover:text-cyan-400 transition">
+                Home
+            </a>
+
+            <a href="#" class="block py-3 text-white hover:text-cyan-400 transition">
+                About
+            </a>
+
+            <a href="#" class="block py-3 text-white hover:text-cyan-400 transition">
+                Services
+            </a>
+
+            <a href="#" class="block py-3 text-white hover:text-cyan-400 transition">
+                Portfolio
+            </a>
+
+            <a href="#" class="block py-3 text-white hover:text-cyan-400 transition">
+                Contact
+            </a>
+
+            <a href="#"
+               class="mt-4 inline-block px-5 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold">
+                Get Started
+            </a>
+
+        </div>
+
+    </div>
+</nav>
+
+
+
+
+
+
+<div class="  relative w-full  h-[350px] max-w-full overflow-hidden rounded-2xl shadow-2xl   mt-[130px]">
+
+    <!-- Slides -->
+    <div id="carousel" class="flex transition-transform duration-700 ease-in-out w-full   ">
+
+        <div class="min-w-full relative">
+            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D"
+                 class="w-full h-[500px] object-cover">
+
+            <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center">
+                <h2 class="text-5xl font-bold text-white mb-4">
+                    Luxury Design
+                </h2>
+                <p class="text-gray-200 text-lg">
+                    Experience the future of driving.
+                </p>
+            </div>
+        </div>
+
+        <div class="min-w-full relative">
+            <img src="https://plus.unsplash.com/premium_photo-1678565879444-f87c8bd9f241?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D"
+                 class="w-full h-[500px] object-cover">
+
+            <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center">
+                <h2 class="text-5xl font-bold text-white mb-4">
+                    Speed & Power
+                </h2>
+                <p class="text-gray-200 text-lg">
+                    Performance that thrills.
+                </p>
+            </div>
+        </div>
+
+        <div class="min-w-full relative">
+            <img src="data:image/jpeg;base64,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"
+                 class="w-full h-[500px] object-cover">
+
+            <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center">
+                <h2 class="text-5xl font-bold text-white mb-4">
+                    Modern Design
+                </h2>
+                <p class="text-gray-200 text-lg">
+                    Elegance meets innovation.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Previous Button -->
+    <button id="prev"
+        class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 backdrop-blur-md p-3 rounded-full text-white transition">
+        &#10094;
+    </button>
+
+    <!-- Next Button -->
+    <button id="next"
+        class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 backdrop-blur-md p-3 rounded-full text-white transition">
+        &#10095;
+    </button>
+
+    <!-- Dots -->
+    <div id="dots" class="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-3">
+        <button class="w-3 h-3 rounded-full bg-white"></button>
+        <button class="w-3 h-3 rounded-full bg-white/40"></button>
+        <button class="w-3 h-3 rounded-full bg-white/40"></button>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<!-- Services Section -->
+<section class="bg-slate-900 py-20 px-6">
+
+    <!-- Heading -->
+    <div class="max-w-7xl mx-auto text-center">
+
+        <h2 class="text-5xl font-bold text-white">
+            Our Premium Services
+        </h2>
+
+        <p class="text-gray-400 mt-4 text-lg max-w-2xl mx-auto">
+            We provide high-quality web development, UI/UX design, and digital solutions to help your business grow.
+        </p>
+
+    </div>
+
+    <!-- Cards -->
+    <div class="max-w-7xl mx-auto mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+        <!-- Card 1 -->
+        <div class="bg-slate-800 rounded-3xl p-8 shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-3 transition-all duration-500">
+
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 flex items-center justify-center text-3xl">
+                💻
+            </div>
+
+            <h3 class="text-2xl font-bold text-white mt-6">
+                Web Development
+            </h3>
+
+            <p class="text-gray-400 mt-4 leading-7">
+                Modern, responsive, and high-performance websites built using the latest technologies.
+            </p>
+
+            <button class="mt-8 px-6 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold hover:scale-105 transition">
+                Learn More
+            </button>
+
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-slate-800 rounded-3xl p-8 shadow-lg hover:shadow-purple-500/20 hover:-translate-y-3 transition-all duration-500">
+
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center text-3xl">
+                🎨
+            </div>
+
+            <h3 class="text-2xl font-bold text-white mt-6">
+                UI / UX Design
+            </h3>
+
+            <p class="text-gray-400 mt-4 leading-7">
+                Beautiful and user-friendly interfaces designed to maximize engagement and conversions.
+            </p>
+
+            <button class="mt-8 px-6 py-3 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold hover:scale-105 transition">
+                Explore
+            </button>
+
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-slate-800 rounded-3xl p-8 shadow-lg hover:shadow-emerald-500/20 hover:-translate-y-3 transition-all duration-500">
+
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-emerald-500 to-green-600 flex items-center justify-center text-3xl">
+                🚀
+            </div>
+
+            <h3 class="text-2xl font-bold text-white mt-6">
+                Digital Marketing
+            </h3>
+
+            <p class="text-gray-400 mt-4 leading-7">
+                Reach more customers with SEO, social media marketing, and targeted advertising campaigns.
+            </p>
+
+            <button class="mt-8 px-6 py-3 rounded-full bg-gradient-to-r from-emerald-500 to-green-600 text-white font-semibold hover:scale-105 transition">
+                Get Started
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- Featured Projects Section -->
+<section class="bg-slate-900 py-20">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Heading -->
+        <div class="text-center mb-16">
+
+            <h2 class="text-5xl font-bold text-white">
+                Featured Projects
+            </h2>
+
+            <p class="text-gray-400 mt-4 max-w-2xl mx-auto text-lg">
+                Here are some of my recent projects that showcase my skills in full-stack web development and backend engineering.
+            </p>
+
+        </div>
+
+        <!-- Project 1 -->
+        <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
+
+            <!-- Image -->
+            <div class="overflow-hidden rounded-3xl shadow-2xl group">
+
+                <img
+                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200"
+                    alt="Job Portal"
+                    class="w-full h-[380px] object-cover group-hover:scale-110 transition duration-700">
+
+            </div>
+
+            <!-- Details -->
+            <div>
+
+                <span class="text-cyan-400 font-semibold uppercase tracking-wider">
+                    Full Stack Project
+                </span>
+
+                <h3 class="text-4xl font-bold text-white mt-3">
+                    Job Portal System
+                </h3>
+
+                <p class="text-gray-400 mt-6 leading-8">
+                    A complete job portal where companies can post jobs and applicants can apply online. The project includes secure JWT authentication, role-based access, profile management, job filtering, and an admin dashboard.
+                </p>
+
+                <!-- Technologies -->
+                <div class="flex flex-wrap gap-3 mt-8">
+
+                    <span class="bg-cyan-500/20 text-cyan-300 px-4 py-2 rounded-full">Node.js</span>
+                    <span class="bg-green-500/20 text-green-300 px-4 py-2 rounded-full">MongoDB</span>
+                    <span class="bg-blue-500/20 text-blue-300 px-4 py-2 rounded-full">Express</span>
+                    <span class="bg-purple-500/20 text-purple-300 px-4 py-2 rounded-full">React</span>
+
+                </div>
+
+                <!-- Buttons -->
+                <div class="flex gap-5 mt-10">
+
+                    <button class="px-7 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold hover:scale-105 transition">
+                        Live Demo
+                    </button>
+
+                    <button class="px-7 py-3 rounded-xl border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-white transition">
+                        GitHub
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Project 2 -->
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+            <!-- Details -->
+            <div class="order-2 lg:order-1">
+
+                <span class="text-pink-400 font-semibold uppercase tracking-wider">
+                    Backend Project
+                </span>
+
+                <h3 class="text-4xl font-bold text-white mt-3">
+                    Spotify Backend Clone
+                </h3>
+
+                <p class="text-gray-400 mt-6 leading-8">
+                    A scalable backend inspired by Spotify with user authentication, playlists, music management, REST APIs, and secure access using JWT. Designed following modern backend architecture and best practices.
+                </p>
+
+                <!-- Technologies -->
+                <div class="flex flex-wrap gap-3 mt-8">
+
+                    <span class="bg-green-500/20 text-green-300 px-4 py-2 rounded-full">Node.js</span>
+                    <span class="bg-yellow-500/20 text-yellow-300 px-4 py-2 rounded-full">JWT</span>
+                    <span class="bg-red-500/20 text-red-300 px-4 py-2 rounded-full">REST API</span>
+                    <span class="bg-indigo-500/20 text-indigo-300 px-4 py-2 rounded-full">MongoDB</span>
+
+                </div>
+
+                <!-- Buttons -->
+                <div class="flex gap-5 mt-10">
+
+                    <button class="px-7 py-3 rounded-xl bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold hover:scale-105 transition">
+                        Live Demo
+                    </button>
+
+                    <button class="px-7 py-3 rounded-xl border border-pink-500 text-pink-400 hover:bg-pink-500 hover:text-white transition">
+                        GitHub
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Image -->
+            <div class="order-1 lg:order-2 overflow-hidden rounded-3xl shadow-2xl group">
+
+                <img
+                    src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=1200"
+                    alt="Spotify Backend"
+                    class="w-full h-[380px] object-cover group-hover:scale-110 transition duration-700">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- Footer -->
+<footer class="bg-slate-950 text-white pt-16 pb-8 mt-20 border-t border-slate-800">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Top Footer -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+            <!-- Company -->
+            <div>
+                <h2 class="text-3xl font-extrabold bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
+                    MoizDev
+                </h2>
+
+                <p class="text-gray-400 mt-5 leading-7">
+                    We build beautiful, modern, and high-performance websites that help businesses grow online.
+                </p>
+
+                <!-- Social Icons -->
+                <div class="flex gap-4 mt-6">
+
+                    <a href="#" class="w-11 h-11 rounded-full bg-slate-800 hover:bg-cyan-500 transition duration-300 flex items-center justify-center">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <path d="M22 12A10 10 0 1010.4 21.9v-7H7.9v-2.9h2.5V9.7c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.3.2 2.3.2v2.5h-1.3c-1.3 0-1.7.8-1.7 1.6v1.9h2.9l-.5 2.9h-2.4v7A10 10 0 0022 12z"/>
+                        </svg>
+
+                    </a>
+
+                    <a href="#" class="w-11 h-11 rounded-full bg-slate-800 hover:bg-pink-500 transition duration-300 flex items-center justify-center">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <path d="M7.8 2h8.4A5.8 5.8 0 0122 7.8v8.4A5.8 5.8 0 0116.2 22H7.8A5.8 5.8 0 012 16.2V7.8A5.8 5.8 0 017.8 2zm8.1 1.8a1.1 1.1 0 100 2.2 1.1 1.1 0 000-2.2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 1.8a3.2 3.2 0 110 6.4 3.2 3.2 0 010-6.4z"/>
+                        </svg>
+
+                    </a>
+
+                    <a href="#" class="w-11 h-11 rounded-full bg-slate-800 hover:bg-sky-500 transition duration-300 flex items-center justify-center">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <path d="M22 5.8c-.7.3-1.5.5-2.2.6a3.8 3.8 0 001.7-2.1 7.6 7.6 0 01-2.4.9A3.8 3.8 0 0012.8 8a10.8 10.8 0 01-7.9-4A3.8 3.8 0 006 9.1a3.7 3.7 0 01-1.7-.5v.1A3.8 3.8 0 007.4 12a3.7 3.7 0 01-1.7.1 3.8 3.8 0 003.5 2.6A7.7 7.7 0 014 16.5 10.9 10.9 0 009.9 18c7.1 0 11-5.9 11-11v-.5A7.9 7.9 0 0022 5.8z"/>
+                        </svg>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Links -->
+            <div>
+                <h3 class="text-xl font-bold mb-6">
+                    Quick Links
+                </h3>
+
+                <ul class="space-y-4 text-gray-400">
+
+                    <li><a href="#" class="hover:text-cyan-400 transition">Home</a></li>
+                    <li><a href="#" class="hover:text-cyan-400 transition">About</a></li>
+                    <li><a href="#" class="hover:text-cyan-400 transition">Services</a></li>
+                    <li><a href="#" class="hover:text-cyan-400 transition">Portfolio</a></li>
+                    <li><a href="#" class="hover:text-cyan-400 transition">Contact</a></li>
+
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div>
+
+                <h3 class="text-xl font-bold mb-6">
+                    Contact
+                </h3>
+
+                <ul class="space-y-4 text-gray-400">
+
+                    <li>📍 Lahore, Pakistan</li>
+                    <li>📞 +92 300 1234567</li>
+                    <li>✉️ info@example.com</li>
+                    <li>🕒 Mon - Fri: 9 AM - 6 PM</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Newsletter -->
+            <div>
+
+                <h3 class="text-xl font-bold mb-6">
+                    Newsletter
+                </h3>
+
+                <p class="text-gray-400 mb-5">
+                    Subscribe to receive the latest updates and offers.
+                </p>
+
+                <div class="flex">
+
+                    <input
+                        type="email"
+                        placeholder="Your Email"
+                        class="w-full px-4 py-3 rounded-l-xl bg-slate-800 border border-slate-700 outline-none focus:border-cyan-400">
+
+                    <button class="px-6 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-r-xl hover:opacity-90 transition">
+                        Join
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-slate-800 mt-12 pt-6">
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+
+                <p class="text-gray-500 text-sm">
+                    © 2026 MoizDev. All Rights Reserved.
+                </p>
+
+                <div class="flex gap-6 text-sm text-gray-400">
+
+                    <a href="#" class="hover:text-cyan-400 transition">
+                        Privacy Policy
+                    </a>
+
+                    <a href="#" class="hover:text-cyan-400 transition">
+                        Terms & Conditions
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script>
+const btn = document.getElementById("menu-btn");
+const menu = document.getElementById("mobile-menu");
+
+btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+});
+
+
+
+
+
+
+
+
+
+const carousel = document.getElementById("carousel");
+const slides = document.querySelectorAll("#carousel > div");
+const dots = document.querySelectorAll("#dots button");
+
+let index = 0;
+
+function updateCarousel() {
+
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+
+    dots.forEach((dot, i) => {
+        dot.classList.toggle("bg-white", i === index);
+        dot.classList.toggle("bg-white/40", i !== index);
+    });
+
+}
+
+document.getElementById("next").addEventListener("click", () => {
+    index = (index + 1) % slides.length;
+    updateCarousel();
+});
+
+document.getElementById("prev").addEventListener("click", () => {
+    index = (index - 1 + slides.length) % slides.length;
+    updateCarousel();
+});
+
+dots.forEach((dot, i) => {
+    dot.addEventListener("click", () => {
+        index = i;
+        updateCarousel();
+    });
+});
+
+// Auto Slide
+setInterval(() => {
+    index = (index + 1) % slides.length;
+    updateCarousel();
+}, 4000);
+
+</script>
+
+</body>
+</html>
